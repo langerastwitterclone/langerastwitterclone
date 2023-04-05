@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Twitter</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/bf1c643ee2.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+</head>
+
+<body class="">
+    <div class="container-fluid container-md">
+                   <!-- Nav bar -->
+                   <nav class=" bg-white lg-nav fixed-top d-sm-block d-md-none d-block d-sm-none">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <span><img class="rounded-circle display-1 text-info py-3" src="img/wallpaper.png " alt="" height="70px"></i></span>
+                            </div>
+                            <div class="col" style="text-align: center;">
+                                <span><i class="fa-brands fa-twitter display-5 text-info py-3"></i></span>
+                            </div>
+                            <div class="col">
+                                <span><i class=""></i></span>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-3">
+                                <span><button type="button" class="btn btn-Light fs-8 text-nowrap">For You</button></span>
+                            </div>
+                            <div class="col-3">
+                                <span><button type="button" class="btn btn-Light fs-8 text-nowrap">Following</button></span>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <!--Icons-->
+                <nav class=" bg-light xs-nav fixed-bottom    d-sm-none">
+                    <div class="container-fluid">
+                        <div class="row h-50 align-items-center">
+                            <div class="col-3">
+                                <span><i class="fa-solid fa-house fs-3 py-3 "></i></span>
+                            </div>
+                            <div class="col-3">
+                                <span><i class="fa-solid fa-magnifying-glass fs-2 py-3 "></i></span>
+                            </div>
+                            <div class="col-3">
+                                <span><i class="fa-solid fa-bell fs-2 py-3"></i></span>
+                            </div>
+                            <div class="col-3">
+                                <span><i class="fa-solid fa-envelope fs-2 py-3"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+        <div class="row ">
+            <!-- LEFT SIDE BAR -->
+            <div
+                class="d-none col-sm-4  d-sm-block  col-md-2 col-lg-3 d-flex flex-column text-sm-end text-md-start align-items-lg-start left_sidebar border-end " style="position: fixed; width: 330px;">
+                <div>
+                    <span><i class="fa-brands fa-twitter display-6 text-info py-3  "></i></span>
+
+                    
+                </div>
+                <div class="d-flex align-items-center justify-content-sm-end justify-content-md-start">
+                    <span><i class="fa-solid fa-house fs-3 py-3"></i></span>
+                    <p class="d-none d-md-block fs-5 fw-bold pt-3 ps-1 mx-auto" style="width: 200px;">Home</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-sm-end justify-content-md-start">
+    
+                    <span><i class="fa-solid fa-hashtag fs-2 py-3 d-none d-md-block"></i></span>
+                    <p   class="d-none d-md-block fs-5 pt-3 ps-1 mx-auto" style="width: 200px;"> Explore</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-sm-end justify-content-md-start">
+                    <span><i class="fa-solid fa-bell fs-2 py-3"></i></span>
+                    <p class="d-none d-md-block fs-5 pt-3 ps-1 mx-auto" style="width: 200px;"> Notifications</p>
+                </div>
+                <div class="d-flex align-items-center  justify-content-sm-end justify-content-md-start">
+                    <span><i class="fa-solid fa-envelope fs-2 py-3"></i></span>
+                    <p class="d-none d-md-block fs-5 pt-3 mx-auto" style="width: 200px;">Messages</p>
+                </div>
+                <div class="d-flex align-items-center  justify-content-sm-end justify-content-md-start" >
+                    <span><i class="fa-solid fa-bookmark fs-1 py-3"></i></span>
+                    <p class="d-none d-md-block fs-5 pt-3 ps-1 mx-auto" style="width: 200px;"> Bookmark</p>
+                </div>
+                <div class="d-flex align-items-center  justify-content-sm-end justify-content-md-start">
+                    <span><i class="fa-solid fab fa-bimobject fs-1 py-3"></i></span>
+                    <p class="d-none d-md-block fs-5 pt-3 mx-auto" style="width: 200px;"> Twitter Blue</p>
+                </div>
+                <div class="d-flex align-items-center  justify-content-sm-end justify-content-md-start">
+                    <span><i class="fa-solid fa-user fs-2 py-3"></i></span>
+                    <p class="d-none d-md-block fs-5 pt-3 ps-1 mx-auto" style="width: 200px;"> Profile</p>
+                </div>
+                <div class="d-flex align-items-center justify-content-sm-end justify-content-md-start">
+                    <div class="position-relative">
+                        <span><i class="fa-solid fa-ellipsis fs-1 py-2"></i></span>
+                        <button type="button" class="btn btn-link fs-5 pt-6 ps-10 text-decoration-none text-dark pb-4 ps-4" data-bs-toggle="dropdown" aria-expanded="false mx-auto" style="width: 93px; height: 99px;">
+                            More
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><div class="dropdown-item far fa-comments fs-6 max-width p-3 weidth-2"  href="#">Topics </a></li> 
+                            <li><div class="dropdown-item fa fa-list-alt fs-6 max-width p-3 weidth-2"  href="#"> Lists</a></li>
+                            <li><a class="dropdown-item fa fa-user fs-6 max-width p-3 weidth-2 " href="#"> Twitter Circle</a></li>
+                            <div class="dropdown-divider"></div>
+                            <li><a class="dropdown-item" href="#">Creator Studio</a></li>
+                            <li><a class="dropdown-item" href="#">Professional Tools</a></li>
+                            <li><a class="dropdown-item" href="#">Setting and Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="position-fixed bottom-0 end-0 m-3 d-flex align-items-center justify-content-center">
+                    <div class="d-flex align-items-center justify-content-center bg-white rounded-circle p-3 shadow">
+                      <i class="fa fa-envira fs-3 tweet-icon"></i>
+                    </div>
+                  </div>
+                  
+                  <div class="d-flex align-items-center justify-content-sm-end justify-content-md-start">
+                    <button class="d-none d-md-inline fs-5 w-100 p-3 btn btn-primary rounded-3 tweet-btn" type="button">TWEET</button>
+                    <i class="d-md-none fa fa-envira fs-3 ms-2 tweet-icon"></i>
+                  </div>
+                  
+                  <style>
+                    @media (max-width: 100px) {
+                      .tweet-btn {
+                        display: none;
+                      }
+                      .tweet-icon {
+                        display: inline-block;
+                      }
+                    }
+                  </style>
+                  
+                  <script>
+                    const tweetBtn = document.querySelector('.tweet-btn');
+                    const tweetIcon = document.querySelector('.tweet-icon');
+                  
+                    window.addEventListener('resize', () => {
+                      if (window.innerWidth <= 768) {
+                        tweetBtn.style.display = 'none';
+                        tweetIcon.style.display = 'inline-block';
+                      } else {
+                        tweetBtn.style.display = 'block';
+                        tweetIcon.style.display = 'none';
+                      }
+                    });
+                  </script>
+                
+                        <nav>
+                        <div class="row mt-1 border d-flex  ">
+                            <div class="col-3 mt-2">
+                                <img class="rounded-circle" src="./img/wallpaper.png" alt="" height="50px">
+                            </div>
+                            <div class="col-7">
+                                <div class="row d-flex justify-content-between align-items-center ps-1">
+                                    <div class="col-10 pt-2 ">
+                                        <div>
+                                            <p><span class="fw-bold text-nowrap">tsiljn</span><br>@tsiljn</p></br>
+                                        </div>
+                                    </div>
+                                    <div class="col-1 me-1 ps-0 btn-group dropup">
+                                        <a href="#" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                          <i class="fa-solid fa-ellipsis"></i>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                          <li><a class="dropdown-item" href="#">Add an existing account</a></li>
+                                          <li><a class="dropdown-item" href="#">Log out @tsiljn</a></li>
+                                        </ul>
+                                      </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        </nav>
+                
+            </div>
+
+            <!-- MAIN -->
+            <div class="col-12 col-sm-10 col-md-10 col-lg-6  main_bar " style="position: relative; left: 330px;">
+                <div class="row d-flex justify-content-between align-items-center border">
+                    <div class="col-1 pt-2">
+                        <div><span class="fs-5 fw-bold">Home</span></div>
+                    </div>
+                    <div class="col-1 me-3">
+                        <div><span class="fs-4"><i class=""></i> </span></div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-sm-6">
+                            <button type="button" class="btn btn-Light fs-5">For You</button>
+                          </div>
+                          <div class="col-sm-2">
+                            <button type="button" class="btn btn-Light fs-5">Following</button>
+                          </div>
+                    </div>
+                </div>
+                <div class="row mt-0 d-flex justify-content-between align-items-center border">
+                    <div class="col pt-2 ">
+                        <div class="row">
+                            <div class="col-2">
+                                <img class="rounded-circle" src="./ace/images/aimex.jpg" alt="" height="50px">
+                            </div>
+                            <div class="col-9 col-sm-10 ">
+                                <input class="border-0 bg  form-control-lg" type="text" placeholder="What's happening?">
+                                <div class="ps-3 d-flex text-info">
+                                    <p><span><i class="fa-solid fa-earth-americas "></i></span></p>
+                                    <p class="fw-bold ps-1 ">Everyone can reply</p>
+                                    <hr>
+                                </div>
+                                <div class="row pb-2 justify-content-center">
+                                    <div class="col-9 text-info">
+                                        <span class="ps-3"><i class="fa-solid fa-image"></i></span>
+                                        <span class="ps-3"><i class="fa-solid fa-face-grin"></i></span>
+                                        <span class="ps-3"><i class="fa-solid fa-location-pin"></i></span>
+                                    </div>
+                                    <div class="col-3 col-sm-2  ">
+                                        <a class="text-decoration-none fs-6  fw-bold text-white bg-info py-1 px-3  rounded-pill"
+                                            href="#">Tweet</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                            <div class="col-1 col-sm-2 text-end fs-5 pt-2 ps-2">
+                            </div>
+                        </div>
+                        <!-- TWEET 1 -->
+                        <div class="row border d-flex" style="position: relative; left: 10px;" >
+                            <div class="col-3 mt-2">
+
+                                <img class="rounded-circle" src="./img/336796170_2294161954099104_4707739249585679549_n.jpg" alt=" Profile pic" height="50px">
+                            </div>
+                            <div class="col-9 " style="position: relative; right: 50px; padding-top: 25;">
+                                <div class="row d-flex justify-content-between align-items-center ps-1">
+                                    <div class="col-10 pt-2 ">
+                                        <div>
+                                            <p><span class="fw-bold">Alsonfred Leyva </span>@Alson_leyva . 5h</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-1 me-2 ps-0">
+                                        <div><span><i class="fa-solid fa-ellipsis fs-5 py-3"></i></span></div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                       Happy with you
+                                    <div class="col">
+                                        <div class="row border d-flex " style="position: relative; right: 10px;">
+                                        <img src="img/46803971_271607637034246_6901668357662048256_n.jpg">
+                                        </div>
+                                </div>
+                                    <div class="row pt-4">
+                                        <div class="col"><p><span><i class="fa-solid fa-comment"></i></span><span class="text-nowrap"> 3</span></p></div>
+                                        <div class="col"><p><span><i class="fa-solid fa-share-from-square"></i></span><span class="text-nowrap"> 0</span></p></div>
+                                        <div class="col"><p><i class="fa-solid fa-heart"></i><span class="d-none d-md-inline text-nowrap"> 25</span><span class="d-inline d-md-none">5.6k</span></p></div>
+                                        <div class="col d-none d-lg-block"><p><i class='fab fa-bimobject'></i><span class="text-nowrap"> 0</span></p></div>
+                                        <div class="col"><p><span><i class="fa-solid fa-share-nodes"></i></span><span class="d-none d-md-inline text-nowrap"> 0</span><span class="d-inline d-md-none">10.0k</span></p></div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- TWEET 2 -->
+                        <div class="row border d-flex " style="position: relative; left: 12px;">
+                            <div class="col-3 mt-2">
+                        
+                                <img class="rounded-circle" src="./img/mavi.jpg" alt="Profile pic" height="50px">
+                            </div>
+                            <div class="col-9 " style="position: relative; right: 50px; padding-top: 25;">
+                                <div class="row d-flex justify-content-between align-items-center ps-1">
+                                    <div class="col-10 pt-2">
+                                        <div>
+                                            <p><span class="fw-bold">Maria Victoria </span>@Mavyyyy . 24h</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-1 me-2 ps-0">
+                                        <div><span><i class="fa-solid fa-ellipsis fs-5 py-3"></i></span></div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    cutieeeeeeeeeeeee
+                                    <div class="row border d-flex  ">
+                                    <img src="./img/cat.jpg">
+                                    </div>
+                                    <div class="row pt-4">
+                                        <div class="col"><p><span><i class="fa-solid fa-comment"></i></span><span class="text-nowrap"> 5</span></p></div>
+                                        <div class="col"><p><span><i class="fa-solid fa-share-from-square"></i></span><span class="text-nowrap"> 0</span></p></div>
+                                        <div class="col"><p><i class="fa-solid fa-heart"></i><span class="d-none d-md-inline text-nowrap"> 10</span><span class="d-inline d-md-none">5.6k</span></p></div>
+                                        <div class="col d-none d-lg-block"><p><i class='fab fa-bimobject'></i><span class="text-nowrap"> 0</span></p></div>
+                                        <div class="col"><p><span><i class="fa-solid fa-share-nodes"></i></span><span class="d-none d-md-inline text-nowrap"> 0</span><span class="d-inline d-md-none">10.0k</span></p></div>
+                                    </div>
+                        
+                                </div>
+                        
+                            </div>
+                        </div>
+
+
+                        <!-- TWEET 3 -->
+                        <div class="row border d-flex" style="position: relative; left: 12px;">
+                            <div class="col-3 mt-2">
+                        
+                                <img class="rounded-circle" src="./img/benjie.jpg" alt="Profile pic" height="50px">
+                            </div>
+                            <div class="col-9 " style="position: relative; right: 50px; padding-top: 25;">
+                                <div class="row d-flex justify-content-between align-items-center ps-1">
+                                    <div class="col-10 pt-2">
+                                        <div>
+                                            <p><span class="fw-bold">Benjie Negrete </span>@Benbenqt15 . 1h</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-1 me-2 ps-0">
+                                        <div><span><i class="fa-solid fa-ellipsis fs-5 py-3"></i></span></div>
+                                    </div>
+                                </div>
+                                <div class="col pb-2">
+                                    arat ml?
+                                    <div class="row border d-flex  ">
+                                        <div class="row border d-flex  ">
+                                            <img src="./img/ml.jpg">
+                                            </div>
+                                    </div>
+                                    <div class="row pt-4">
+                                        <div class="col"><p><span><i class="fa-solid fa-comment"></i></span><span class="text-nowrap"> 20</span></p></div>
+                                        <div class="col"><p><span><i class="fa-solid fa-share-from-square"></i></span><span class="text-nowrap"> 0</span></p></div>
+                                        <div class="col"><p><i class="fa-solid fa-heart"></i><span class="d-none d-md-inline text-nowrap"> 20</span><span class="d-inline d-md-none">5.6k</span></p></div>
+                                        <div class="col d-none d-lg-block"><p><i class='fab fa-bimobject'></i><span class="text-nowrap"> 3</span></p></div>
+                                        <div class="col"><p><span><i class="fa-solid fa-share-nodes"></i></span><span class="d-none d-md-inline text-nowrap"> 0</span><span class="d-inline d-md-none">10.0k</span></p></div>
+                                    </div>
+                        
+                                </div>
+                        
+                            </div>
+                        </div>
+
+                        <!-- TWEET 4 -->
+                        <div class="row border d-flex" style="position: relative; left: 12px;">
+                            <div class="col-3 mt-2">
+                        
+                                <img class="rounded-circle" src="./img/jp.jpg" alt="Profile pic" height="50px">
+                            </div>
+                            <div class="col-9 "  style="position: relative; right: 50px; padding-top: 25;">
+                                <div class="row d-flex justify-content-between align-items-center ps-10">
+                                    <div class="col-10 pt-2 pb-2">
+                                        <div>
+                                            <p><span class="fw-bold">JP Capin</span>@Jcapin . 23h</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-1 me-2 ps-0">
+                                        <div><span><i class="fa-solid fa-ellipsis fs-5 py-3"></i></span></div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    how can i move on, when i still inlove with you T_T
+                                    <div class="row border d-flex">
+                                    <img src="./img/images.jpg">
+                                    </div>
+                                    <div class="row pt-4" style="position: relative; right: 37px; padding-bottom: 25;">
+                                        <div class="col"><p><span><i class="fa-solid fa-comment"></i></span><span class="text-nowrap"> 34</span></p></div>
+                                        <div class="col"><p><span><i class="fa-solid fa-share-from-square"></i></span><span class="text-nowrap"> 0</span></p></div>
+                                        <div class="col"><p><i class="fa-solid fa-heart"></i><span class="d-none d-md-inline text-nowrap"> 100</span><span class="d-inline d-md-none">5.6k</span></p></div>
+                                        <div class="col d-none d-lg-block"><p><i class='fab fa-bimobject'></i><span class="text-nowrap"> 0</span></p></div>
+                                        <div class="col"><p><span><i class="fa-solid fa-share-nodes"></i></span><span class="d-none d-md-inline text-nowrap"> 0</span><span class="d-inline d-md-none">10.0k</span></p></div>
+                                    </div>
+                        
+                                </div>
+                        
+                            </div>
+                        </div>
+
+                        <!-- TWEET 5 -->
+                        <div class="row border d-flex" style="position: relative; left: 12px;">
+                            <div class="col-3 mt-2">
+                        
+                                <img class="rounded-circle" src="./img/pp.jpg" alt="Profile pic" height="50px">
+                            </div>
+                            <div class="col-9 " style="position: relative; right: 50px; padding-top: 25;">
+                                <div class="row d-flex justify-content-between align-items-center ps-1">
+                                    <div class="col-10 pt-2 ">
+                                        <div>
+                                            <p><span class="fw-bold">Jay Gwapo </span>@chavesjayemerald . 23h</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-1 me-2 ps-0">
+                                        <div><span><i class="fa-solid fa-ellipsis fs-5 py-3"></i></span></div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    hunch of lolis
+                                    <div class="row border d-flex  ">
+                                        <div class="row border d-flex" style="position: relative; right: 50px;" >
+                                            <img src="./img/loli.jpg">
+                                            </div>
+                                    <div class="row pt-4">
+                                        <div class="col"><p><span><i class="fa-solid fa-comment"></i></span><span class="text-nowrap"> 15</span></p></div>
+                                        <div class="col"><p><span><i class="fa-solid fa-share-from-square"></i></span><span class="text-nowrap"> 0</span></p></div>
+                                        <div class="col"><p><i class="fa-solid fa-heart"></i><span class="d-none d-md-inline text-nowrap"> 35</span><span class="d-inline d-md-none">5.6k</span></p></div>
+                                        <div class="col d-none d-lg-block"><p><i class='fab fa-bimobject'></i><span class="text-nowrap"> 12</span></p></div>
+                                        <div class="col"><p><span><i class="fa-solid fa-share-nodes"></i></span><span class="d-none d-md-inline text-nowrap"> 0</span><span class="d-inline d-md-none">10.0k</span></p></div>
+                                    </div>
+
+                        
+                                </div>
+                        
+                            </div>
+                        </div>
+            <!-- RIGHT SIDE BAR -->
+            <div class="col-lg-3 d-none d-lg-block  w-25 h-25 right_side_bar">
+                <div class="">
+                    <div class="bg-opacity-10 bg-black rounded-pill">
+                        <div class="row d-flex align-items-center ">
+                            <div class="col-2 text-end fs-4">
+                                <span><i class="fa-solid fa-magnifying-glass ps-4"></i></span>
+                            </div>
+                            <div class="col-10"><input type="text"
+                                    class="form-control-lg border-0 me-1 w-75 bg-transparent"
+                                    placeholder="Search Twitter"></div>
+                        </div>
+                    </div>
+                    <div class="row bg-opacity-10 bg-black mx-1 my-2 pb-3 rounded-3">
+                        <div class="col">
+                            <div class="trending">
+                                <p class="fs-6 fw-bold py-2">Trends for you</p>
+                                <div class="row">
+                                    <div class="col-9">
+                                        <p class="m-0">Trending in Philippines</p>
+                                    </div>
+                                    <div class="col-3 text-end">
+                                        <span><i class="fa-solid fa-ellipsis pe-2"></i></span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="fs-6 fw-bold mb-0">#Praying4CDO</p>
+                                        <p class="">12.7k Tweets</p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-9">
+                                        <p class="m-0">Trending in Philippines</p>
+                                    </div>
+                                    <div class="col-3 text-end">
+                                        <span><i class="fa-solid fa-ellipsis pe-2"></i></span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="fs-6 fw-bold mb-0">#MPL Philippines</p>
+                                        <p class="">10k Tweets</p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-9">
+                                        <p class="m-0"> Trending in Philippines</p>
+                                    </div>
+                                    <div class="col-3 text-end">
+                                        <span><i class="fa-solid fa-ellipsis pe-2"></i></span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="fs-6 fw-bold mb-0">#USTP INTRAMS</p>
+                                        <p class=""> 2k Tweets</p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-9">
+                                        <p class="m-0">Trending in Philippines</p>
+                                    </div>
+                                    <div class="col-3 text-end">
+                                        <span><i class="fa-solid fa-ellipsis pe-2"></i></span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="fs-6 fw-bold mb-0">#DOTA 2 DPC</p>
+                                        <p class=""> 50k Tweets</p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-9">
+                                        <p class="m-0">Showbiz: Trend</p>
+                                    </div>
+                                    <div class="col-3 text-end">
+                                        <span><i class="fa-solid fa-ellipsis pe-2"></i></span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="fs-6 fw-bold mb-0">#Selena Gomez x Zayn Malik</p>
+                                        <p class=""> 500k Tweets</p>
+                                    </div>
+                                </div>
+
+                                <span class="text-info">Show More</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                    
+                    
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
